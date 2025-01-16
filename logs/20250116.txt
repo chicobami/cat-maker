@@ -1,0 +1,93 @@
+[ 2025-01-16 ]
+jyoshi.tsにて
+"Next.jsで猫画像ジェネレーターを作ろう"
+
+■ メモ
+
+yarn devでサーバ立ち上げ
+
+`Next.jsでは、1ファイルにつき1ページコンポーネントを作成します。`
+pagesディレクトリの各tsxファイルを読む
+→デフォルトエクスポートされた関数をページコンポーネントとして認識
+
+(ページコンポーネント完全に理解した…！)
+
+async キーワード：非同期処理を行うことを示すもの
+fetchとres.jsonは非同期関数 - 処理を待つために await キーワードがついている
+
+(async, await直感的に使ってしまっていた、お作法的なものかと… awaitは通りで待ってそうなワードだなと思っていた…)
+
+画像を取得する関数を実装する、まで
+https://typescriptbook.jp/tutorials/nextjs#%E7%94%BB%E5%83%8F%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B%E9%96%A2%E6%95%B0%E3%82%92%E5%AE%9F%E8%A3%85%E3%81%99%E3%82%8B
+
+動物取得APIの旅
+https://qiita.com/e99h2121/items/6d5cc72679f43aa37be2
+
+■ 実行結果
+imageデータがオブジェクトで表示されている
+[{…}]
+0
+: 
+height
+: 
+536
+id
+: 
+"c5a"
+url
+: 
+"https://cdn2.thecatapi.com/images/c5a.jpg"
+width
+: 
+708
+[[Prototype]]
+: 
+Object
+constructor
+: 
+ƒ Object()
+hasOwnProperty
+: 
+ƒ hasOwnProperty()
+isPrototypeOf
+: 
+ƒ isPrototypeOf()
+propertyIsEnumerable
+: 
+ƒ propertyIsEnumerable()
+toLocaleString
+: 
+ƒ toLocaleString()
+toString
+: 
+ƒ toString()
+valueOf
+: 
+ƒ valueOf()
+__defineGetter__
+: 
+ƒ __defineGetter__()
+__defineSetter__
+: 
+ƒ __defineSetter__()
+__lookupGetter__
+: 
+ƒ __lookupGetter__()
+__lookupSetter__
+: 
+ƒ __lookupSetter__()
+__proto__
+: 
+(...)
+get __proto__
+: 
+ƒ __proto__()
+set __proto__
+: 
+ƒ __proto__()
+length
+: 
+1
+[[Prototype]]
+: 
+Array(0)
